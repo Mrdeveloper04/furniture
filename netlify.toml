@@ -1,0 +1,9 @@
+[build]
+# For a simple static site, Netlify just needs index.html in the root
+publish = "."
+
+# Functions directory (Netlify default is netlify/functions)
+functions = "netlify/functions"
+
+[functions]
+node_bundler = "esbuild"
