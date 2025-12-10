@@ -1,0 +1,25 @@
+{
+  "name": "sagar-sofas-site",
+  "version": "1.0.0",
+  "description": "Sagar Sofas marketing site with Netlify chat assistant",
+  "main": "index.js",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo \"Static site - no build step\"",
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mrdeveloper04/furniture.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mrdeveloper04/furniture/issues"
+  },
+  "homepage": "https://github.com/Mrdeveloper04/furniture#readme",
+  "dependencies": {
+    "@netlify/functions": "^5.1.1"
+  }
+}
