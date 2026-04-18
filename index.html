@@ -1,0 +1,1510 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sagar Sofas — Luxury & Custom Sofas in Guntur</title>
+  <meta name="description" content="Sagar Sofas in Guntur offers premium fabric, leather, recliner and custom-made sofas crafted for Indian homes with warranty and delivery across Guntur.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1200&q=70">
+
+  <style>
+    :root {
+      --bg:#f7f3ef;
+      --bg-alt:#fbf8f5;
+      --primary:#1a2940;
+      --primary-soft:#253b5f;
+      --accent:#c47b3f;
+      --text:#222222;
+      --muted:#666666;
+      --border:#e0d6cc;
+      --radius-lg:18px;
+      --radius-md:12px;
+      --radius-pill:999px;
+      --shadow-soft:0 18px 45px rgba(10,20,40,.08);
+      --shadow-card:0 12px 28px rgba(15,23,42,.07);
+      --nav-height:76px;
+      --transition-fast:.18s ease-out;
+      --transition-med:.28s ease-out;
+      --max-width:1180px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;}
+    body{
+      font-family:"Inter",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:radial-gradient(circle at top left,#fdfaf6 0,var(--bg) 48%,#f3eee8 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+    }
+    img{
+      max-width:100%;
+      display:block;
+      object-fit:cover;
+    }
+    a{color:inherit;text-decoration:none}
+    button{font-family:inherit;border:none;background:none;cursor:pointer}
+    :focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+    .page{min-height:100vh;display:flex;flex-direction:column}
+    .container{width:100%;max-width:var(--max-width);margin:0 auto;padding-inline:1.25rem}
+
+    /* Top bar */
+    .top-bar{font-size:.78rem;background:#101827;color:#e5e7eb}
+    .top-bar-inner{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:.75rem;padding:.45rem 1.25rem;max-width:var(--max-width);margin:0 auto;
+    }
+    .top-bar-left,.top-bar-right{display:flex;align-items:center;gap:.85rem;flex-wrap:wrap}
+    .pill{
+      border-radius:var(--radius-pill);
+      border:1px solid rgba(148,163,184,.6);
+      padding:.18rem .5rem;
+      display:inline-flex;align-items:center;gap:.3rem;
+      font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;
+      background:rgba(15,23,42,.75);
+    }
+
+    /* Header */
+    header{
+      position:sticky;top:0;z-index:40;
+      backdrop-filter:blur(12px);
+      background:rgba(247,243,239,.86);
+      border-bottom:1px solid rgba(209,213,219,.6);
+    }
+    .nav{
+      height:var(--nav-height);
+      display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    }
+    .logo-group{display:flex;align-items:center;gap:.6rem}
+    .logo-mark{
+      width:34px;height:34px;border-radius:11px;
+      background:radial-gradient(circle at 25% 15%,#f8e0c0,#c47b3f);
+      display:flex;align-items:center;justify-content:center;
+      color:#111827;font-weight:700;font-size:.94rem;
+      box-shadow:0 10px 18px rgba(148,92,48,.4);
+    }
+    .logo-text{display:flex;flex-direction:column;line-height:1.1}
+    .logo-text span:first-child{
+      font-family:"Playfair Display",serif;font-size:1.15rem;
+      letter-spacing:.06em;text-transform:uppercase;color:var(--primary);
+    }
+    .logo-text span:last-child{font-size:.75rem;color:var(--muted)}
+    .nav-links{display:flex;align-items:center;gap:1.6rem;font-size:.9rem}
+    .nav-link{
+      color:var(--muted);cursor:pointer;
+      position:relative;transition:color var(--transition-fast);
+    }
+    .nav-link::after{
+      content:"";position:absolute;left:0;bottom:-.15rem;
+      width:0;height:2px;border-radius:999px;background:var(--accent);
+      transition:width var(--transition-fast);
+    }
+    .nav-link:hover{color:var(--primary)}
+    .nav-link:hover::after{width:100%}
+    .nav-link.active{color:var(--primary)}
+    .nav-cta{display:flex;align-items:center;gap:.6rem}
+
+    .btn{
+      border-radius:var(--radius-pill);
+      border:1px solid transparent;
+      padding:.55rem 1.2rem;
+      font-size:.82rem;font-weight:500;
+      display:inline-flex;align-items:center;justify-content:center;gap:.35rem;
+      transition:transform var(--transition-fast),box-shadow var(--transition-fast),
+               background var(--transition-fast),color var(--transition-fast),
+               border-color var(--transition-fast);
+      white-space:nowrap;
+    }
+    .btn-primary{
+      background:var(--primary);color:#f9fafb;box-shadow:var(--shadow-soft);
+    }
+    .btn-primary:hover{
+      background:var(--primary-soft);
+      transform:translateY(-1px);
+      box-shadow:0 18px 40px rgba(15,23,42,.35);
+    }
+    .btn-outline{
+      border-color:rgba(15,23,42,.14);
+      background:rgba(248,250,252,.7);
+      color:var(--primary);
+    }
+    .btn-outline:hover{
+      background:#fff;
+      box-shadow:0 10px 26px rgba(148,163,184,.4);
+      transform:translateY(-1px);
+    }
+    .btn-secondary{
+      border-color:rgba(148,163,184,.7);
+      background:#fff;color:var(--primary);
+    }
+    .btn-secondary:hover{background:#f9fafb}
+
+    .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:.15rem}
+    .nav-toggle span{
+      display:block;width:20px;height:2px;border-radius:999px;
+      background:#111827;transition:transform .2s ease,opacity .2s ease;
+    }
+    .nav-toggle span+span{margin-top:4px}
+
+    .nav-mobile{
+      position:fixed;inset:var(--nav-height) 0 auto;
+      background:rgba(247,243,239,.97);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(209,213,219,.7);
+      padding:.7rem 1.25rem 1rem;
+      display:none;flex-direction:column;gap:.4rem;z-index:35;
+    }
+    .nav-mobile.show{display:flex}
+    .nav-mobile a{padding-block:.3rem;color:var(--muted);font-size:.9rem}
+    .nav-mobile a.active{color:var(--primary);font-weight:500}
+    .nav-mobile-cta{display:flex;gap:.5rem;margin-top:.4rem}
+
+    /* Hero */
+    .hero{padding:2.5rem 0 2.8rem}
+    .hero-inner{
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);
+      gap:2.4rem;align-items:center;
+    }
+    .hero-copy h1{
+      font-family:"Playfair Display",serif;
+      font-size:2.2rem;letter-spacing:.02em;
+      margin-bottom:.75rem;color:var(--primary);
+    }
+    .hero-copy p{
+      font-size:.98rem;color:var(--muted);
+      max-width:34rem;margin-bottom:1rem;
+    }
+    .hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:1.4rem}
+    .hero-meta{
+      display:flex;flex-wrap:wrap;gap:1.5rem;
+      font-size:.82rem;color:var(--muted);
+    }
+    .hero-meta-item span:first-child{font-weight:600;color:var(--primary)}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:.45rem;
+      font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;
+      color:var(--muted);margin-bottom:.35rem;
+    }
+    .eyebrow-dot{width:8px;height:8px;border-radius:999px;background:var(--accent)}
+
+    .hero-visual{position:relative}
+    .hero-card{
+      border-radius:var(--radius-lg);
+      background:linear-gradient(135deg,#f9f3ec,#f0e4d6);
+      padding:1.2rem;box-shadow:var(--shadow-soft);
+      border:1px solid rgba(148,92,48,.25);
+    }
+    .hero-sofa{
+      border-radius:var(--radius-md);
+      background:#101827;
+      padding:1rem;color:#e5e7eb;
+      display:flex;flex-direction:column;gap:.8rem;
+    }
+    .hero-sofa-top{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:1rem;margin-bottom:.4rem;
+    }
+    .hero-sofa-label{font-size:.9rem;font-weight:500}
+    .hero-sofa-tag{
+      font-size:.75rem;padding:.35rem .7rem;
+      border-radius:999px;
+      background:rgba(15,23,42,.8);
+      border:1px solid rgba(148,163,184,.9);
+    }
+    .hero-sofa-img{
+      border-radius:14px;overflow:hidden;margin-bottom:.5rem;
+    }
+    .hero-sofa-img img{width:100%;height:220px;object-fit:cover}
+    .hero-sofa-line{height:3px;background:linear-gradient(90deg,#c47b3f,#facc15)}
+    .hero-sofa-meta{
+      display:flex;flex-wrap:wrap;gap:.5rem;
+      justify-content:space-between;font-size:.8rem;color:#e5e7eb;opacity:.9;
+    }
+    .hero-floating-card{
+      position:absolute;right:1.4rem;top:-.6rem;
+      border-radius:var(--radius-md);
+      background:rgba(255,255,255,.95);
+      padding:.55rem .8rem;font-size:.8rem;
+      box-shadow:var(--shadow-card);color:var(--primary);
+    }
+    .hero-floating-card span:first-child{font-size:.75rem;color:var(--muted)}
+    .hero-floating-card span:last-child{font-weight:600}
+    .hero-stats{
+      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:.8rem;margin-top:.85rem;font-size:.78rem;color:var(--muted);
+    }
+    .hero-stat{
+      border-radius:var(--radius-md);
+      background:rgba(255,255,255,.9);
+      padding:.55rem .7rem;
+      border:1px solid rgba(209,213,219,.7);
+    }
+    .hero-stat strong{display:block;font-size:.95rem;color:var(--primary)}
+
+    .trust{
+      margin-top:1.9rem;padding:.7rem 0;
+      border-block:1px solid rgba(209,213,219,.7);
+      display:flex;align-items:center;justify-content:space-between;
+      gap:1rem;font-size:.78rem;color:var(--muted);
+    }
+    .trust-group{display:flex;flex-wrap:wrap;gap:.85rem}
+    .trust-item{display:inline-flex;align-items:center;gap:.42rem}
+    .trust-dot{width:6px;height:6px;border-radius:999px;background:var(--primary)}
+
+    .section{padding:2.3rem 0 0}
+    .section-header{
+      display:flex;align-items:flex-end;justify-content:space-between;
+      gap:1rem;margin-bottom:1.2rem;
+    }
+    .section-header h2{
+      font-size:1.45rem;font-family:"Playfair Display",serif;color:var(--primary);
+    }
+    .section-header p{font-size:.9rem;color:var(--muted);max-width:28rem}
+
+    /* Collections */
+    .collections-grid{
+      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;
+    }
+    .collection-card{
+      border-radius:var(--radius-lg);
+      background:var(--bg-alt);
+      box-shadow:var(--shadow-card);
+      border:1px solid rgba(224,214,204,.8);
+      overflow:hidden;
+      display:flex;flex-direction:column;
+      transition:transform var(--transition-med),box-shadow var(--transition-med);
+    }
+    .collection-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 20px 46px rgba(15,23,42,.12);
+    }
+    .collection-media{height:180px;overflow:hidden}
+    .collection-media img{width:100%;height:100%;object-fit:cover}
+    .collection-body{padding:.85rem;font-size:.86rem}
+    .collection-label{
+      display:inline-flex;align-items:center;gap:.35rem;
+      font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;
+      color:var(--muted);margin-bottom:.3rem;
+    }
+    .collection-label-dot{width:6px;height:6px;border-radius:999px;background:var(--accent)}
+    .collection-body h3{font-size:1rem;margin-bottom:.25rem;color:var(--primary)}
+    .collection-body p{font-size:.85rem;color:var(--muted);margin-bottom:.6rem}
+    .collection-meta{
+      display:flex;justify-content:space-between;align-items:center;
+      font-size:.8rem;color:var(--muted);
+    }
+    .collection-meta strong{color:var(--primary)}
+
+    /* Products */
+    .products-section{padding:2.3rem 0 0}
+    .products-shell{
+      display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+      gap:1.3rem;align-items:flex-start;
+    }
+    .filter-card{
+      border-radius:var(--radius-lg);
+      background:#fff;
+      border:1px solid var(--border);
+      padding:.85rem .9rem .9rem;
+      box-shadow:var(--shadow-card);
+      font-size:.85rem;
+    }
+    .filter-header{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:.6rem;margin-bottom:.75rem;
+    }
+    .filter-header h3{font-size:.9rem;color:var(--primary)}
+    .filter-group{margin-bottom:.75rem}
+    .filter-label{
+      font-size:.78rem;color:var(--muted);
+      margin-bottom:.25rem;display:block;
+    }
+    .input,.select{
+      width:100%;padding:.5rem .6rem;
+      border-radius:var(--radius-md);
+      border:1px solid var(--border);
+      font-size:.85rem;background:#fff;
+      transition:border-color var(--transition-fast),
+               box-shadow var(--transition-fast),
+               transform var(--transition-fast);
+    }
+    .input:focus,.select:focus{
+      border-color:var(--primary);
+      box-shadow:0 0 0 1px rgba(37,56,94,.25);
+      transform:translateY(-1px);outline:none;
+    }
+
+    .products-list{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:1rem;
+    }
+    .product-card{
+      border-radius:var(--radius-lg);
+      background:#fff;
+      border:1px solid rgba(224,214,204,.9);
+      padding:.8rem;
+      box-shadow:var(--shadow-card);
+      font-size:.85rem;
+      display:flex;flex-direction:column;
+      transition:transform var(--transition-med),
+                 box-shadow var(--transition-med),
+                 border-color var(--transition-med);
+    }
+    .product-card:hover{
+      transform:translateY(-4px);
+      border-color:rgba(192,172,150,1);
+      box-shadow:0 18px 40px rgba(15,23,42,.12);
+    }
+    .product-media{
+      height:150px;border-radius:var(--radius-md);
+      overflow:hidden;margin-bottom:.55rem;background:#e5e7eb;
+    }
+    .product-media img{width:100%;height:100%;object-fit:cover}
+    .product-chip-row{
+      display:flex;flex-wrap:wrap;gap:.35rem;
+      font-size:.75rem;color:var(--muted);margin-bottom:.35rem;
+    }
+    .product-chip{
+      padding:.12rem .45rem;border-radius:999px;
+      border:1px solid rgba(209,213,219,.7);
+      background:rgba(249,250,251,.9);
+    }
+    .product-name{font-size:.96rem;font-weight:500;color:var(--primary);margin-bottom:.25rem}
+    .product-meta{
+      display:flex;justify-content:space-between;align-items:center;
+      font-size:.8rem;color:var(--muted);margin-bottom:.45rem;
+      gap:.5rem;flex-wrap:wrap;
+    }
+    .product-price{font-weight:600;color:var(--primary)}
+    .product-actions{margin-top:auto;display:flex;gap:.5rem;flex-wrap:wrap}
+    .btn-small{flex:1;padding:.45rem .6rem;font-size:.78rem;border-radius:var(--radius-md)}
+    .empty{
+      grid-column:1/-1;text-align:center;padding:1.25rem;
+      border-radius:var(--radius-lg);border:1px dashed var(--border);
+      background:#fafafa;color:var(--muted);font-size:.9rem;
+    }
+
+    /* Builder */
+    .builder-section{padding:2.4rem 0 0}
+    .builder-shell{
+      border-radius:var(--radius-lg);
+      background:#fff;
+      border:1px solid var(--border);
+      padding:1.25rem 1.3rem;
+      box-shadow:var(--shadow-soft);
+      display:grid;
+      grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+      gap:1.4rem;align-items:flex-start;
+    }
+    .builder-text h2{
+      font-size:1.45rem;font-family:"Playfair Display",serif;
+      color:var(--primary);margin-bottom:.35rem;
+    }
+    .builder-text p{
+      font-size:.9rem;color:var(--muted);
+      margin-bottom:.8rem;max-width:32rem;
+    }
+    .badge-row{display:flex;flex-wrap:wrap;gap:.35rem;font-size:.78rem;color:var(--muted);margin-bottom:.7rem}
+    .badge{
+      padding:.18rem .55rem;border-radius:999px;
+      border:1px solid rgba(209,213,219,.9);background:#f9fafb;
+    }
+
+    .swatch-grid{
+      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;margin-top:.8rem;
+    }
+    .swatch{
+      border-radius:var(--radius-md);
+      border:1px solid var(--border);
+      background:#fff;
+      padding:.45rem;
+      cursor:pointer;
+      text-align:center;
+      font-size:.8rem;
+      color:var(--muted);
+      transition:border-color var(--transition-fast),
+               background var(--transition-fast),
+               box-shadow var(--transition-fast),
+               transform var(--transition-fast);
+    }
+    .swatch:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 20px rgba(0,0,0,.06);
+    }
+    .swatch-color{
+      width:100%;height:36px;border-radius:8px;
+      margin-bottom:.3rem;border:1px solid #ccc;
+    }
+    .swatch.active{
+      border-color:var(--accent);
+      background:var(--accent-soft);
+      color:#3a2a1b;
+      box-shadow:0 12px 26px rgba(0,0,0,.08);
+      transform:translateY(-2px);
+    }
+    .swatch span{display:block}
+    .swatch span:last-child{font-size:.76rem}
+
+    .builder-form label{
+      display:block;font-size:.78rem;
+      margin-bottom:.2rem;color:var(--muted);
+    }
+    .textarea{
+      width:100%;padding:.6rem .7rem;
+      border-radius:var(--radius-md);
+      border:1px solid var(--border);
+      font-size:.86rem;min-height:90px;
+      resize:vertical;background:#fff;
+      transition:border-color var(--transition-fast),
+               box-shadow var(--transition-fast),
+               transform var(--transition-fast);
+    }
+    .textarea:focus{
+      border-color:var(--primary);
+      box-shadow:0 0 0 1px rgba(37,56,94,.25);
+      transform:translateY(-1px);outline:none;
+    }
+    .builder-actions{margin-top:.7rem;display:flex;gap:.5rem;flex-wrap:wrap}
+
+    /* Stories */
+    .stories-section{padding:2.5rem 0 0}
+    .stories-grid{
+      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;
+    }
+    .story-card{
+      border-radius:var(--radius-lg);
+      background:#fff;
+      border:1px solid var(--border);
+      padding:.85rem;
+      box-shadow:var(--shadow-card);
+      font-size:.85rem;
+      display:flex;flex-direction:column;gap:.6rem;
+      transition:transform var(--transition-med),
+                 box-shadow var(--transition-med),
+                 border-color var(--transition-med);
+    }
+    .story-card:hover{
+      transform:translateY(-4px);
+      border-color:rgba(192,172,150,1);
+      box-shadow:0 18px 42px rgba(15,23,42,.12);
+    }
+    .story-img{
+      border-radius:var(--radius-md);
+      overflow:hidden;height:150px;background:#e5e7eb;
+    }
+    .story-img img{width:100%;height:100%;object-fit:cover}
+    .story-title{font-weight:500;color:var(--primary);font-size:.95rem}
+    .story-body{font-size:.84rem;color:var(--muted)}
+    .story-meta{font-size:.8rem;color:var(--muted)}
+
+    /* Visit */
+    .visit-section{padding:2.5rem 0 2.3rem}
+    .visit-shell{
+      border-radius:var(--radius-lg);
+      background:#fff;
+      border:1px solid var(--border);
+      padding:1.3rem;
+      box-shadow:var(--shadow-soft);
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+      gap:1.4rem;align-items:flex-start;
+    }
+    .visit-text h2{
+      font-size:1.4rem;font-family:"Playfair Display",serif;
+      color:var(--primary);margin-bottom:.3rem;
+    }
+    .visit-text p{
+      font-size:.9rem;color:var(--muted);
+      margin-bottom:.7rem;max-width:32rem;
+    }
+    .visit-details{font-size:.85rem;color:var(--muted);margin-bottom:.7rem;line-height:1.55}
+    .visit-details strong{color:var(--primary)}
+    .visit-details .map-inline{
+      display:inline-flex;align-items:center;gap:.3rem;
+      color:var(--accent);font-weight:600;text-decoration:none;
+      border-bottom:1px dashed rgba(196,123,63,.5);
+      padding-bottom:1px;
+    }
+    .visit-details .map-inline:hover{color:var(--primary);border-color:var(--primary)}
+    .visit-actions{display:flex;gap:.6rem;flex-wrap:wrap}
+    .visit-map{
+      border-radius:var(--radius-md);
+      overflow:hidden;height:220px;background:#e5e7eb;
+    }
+    .visit-map img{width:100%;height:100%;object-fit:cover}
+
+    /* Floating WA */
+    .floating{position:fixed;right:1.2rem;bottom:1.2rem;z-index:45}
+    /* Made-by credit (inline, in the footer) */
+    .footer-credit{
+      display:inline-flex;align-items:center;gap:.5rem;
+      margin-top:.5rem;
+      padding:.4rem .75rem;
+      border-radius:var(--radius-pill);
+      background:rgba(26,41,64,.06);
+      border:1px solid var(--border);
+      color:var(--primary);text-decoration:none;
+      font-size:.78rem;font-weight:500;line-height:1;
+      width:fit-content;
+      transition:transform var(--transition-fast),background var(--transition-fast),border-color var(--transition-fast);
+    }
+    .footer-credit:hover,
+    .footer-credit:focus-visible{
+      transform:translateY(-1px);
+      background:rgba(196,123,63,.1);
+      border-color:rgba(196,123,63,.55);
+      outline:none;
+    }
+    .footer-credit .credit-dot{
+      width:7px;height:7px;border-radius:999px;
+      background:var(--accent);
+      box-shadow:0 0 0 3px rgba(196,123,63,.18);
+    }
+    .footer-credit .credit-by{opacity:.7;font-weight:400}
+    .footer-credit .credit-name{color:var(--accent);font-weight:600}
+    .floating-btn{
+      border-radius:999px;
+      padding:.5rem .8rem;
+      background:#22c55e;color:#fff;
+      font-size:.88rem;
+      display:inline-flex;align-items:center;gap:.45rem;
+      box-shadow:0 18px 40px rgba(22,163,74,.65);
+      transition:transform var(--transition-fast),
+               box-shadow var(--transition-fast),
+               background var(--transition-fast);
+    }
+    .floating-btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 22px 50px rgba(22,163,74,.8);
+      background:#16a34a;
+    }
+    .floating-btn span.icon{
+      width:26px;height:26px;border-radius:999px;
+      background:rgba(255,255,255,.15);
+      display:inline-flex;align-items:center;justify-content:center;
+    }
+    .floating-btn span.label{font-size:.82rem}
+
+    /* Footer */
+    footer{
+      border-top:1px solid rgba(209,213,219,.7);
+      padding:1.5rem 0;
+      background:#fdfbf9;
+      margin-top:auto;
+      font-size:.82rem;
+      color:var(--muted);
+    }
+    .footer-inner{
+      display:grid;
+      grid-template-columns:minmax(0,1.2fr) minmax(0,.9fr) minmax(0,.9fr);
+      gap:1.3rem;align-items:flex-start;
+    }
+    .footer-brand{display:flex;flex-direction:column;gap:.35rem}
+    .footer-brand-title{
+      font-family:"Playfair Display",serif;
+      font-size:1.05rem;color:var(--primary);
+    }
+    .footer-links{display:flex;flex-direction:column;gap:.3rem}
+    .footer-links a{color:var(--muted);font-size:.82rem}
+    .footer-links a:hover{color:var(--primary)}
+
+    .toast{
+      position:fixed;bottom:1rem;right:1rem;
+      padding:.6rem .8rem;
+      border-radius:var(--radius-md);
+      background:#111827;color:#f9fafb;
+      font-size:.8rem;
+      opacity:0;pointer-events:none;
+      transform:translateY(10px);
+      transition:opacity .18s ease,transform .18s ease;
+      z-index:60;
+    }
+    .toast.show{opacity:1;transform:translateY(0)}
+
+    .reveal{
+      opacity:0;
+      transform:translateY(16px);
+      transition:opacity .5s ease-out,transform .5s ease-out;
+      will-change:opacity,transform;
+    }
+    .reveal.show{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    @media (max-width:960px){
+      .hero-inner,.products-shell,.builder-shell,.visit-shell{
+        grid-template-columns:minmax(0,1fr);
+      }
+      .footer-inner{
+        grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+      }
+      .hero{padding-top:2rem}
+    }
+    @media (max-width:768px){
+      .top-bar-inner{
+        padding-inline:1rem;
+        justify-content:center;text-align:center;
+      }
+      .nav-links,.nav-cta{display:none}
+      .nav-toggle{display:block}
+      .hero{padding-top:1.6rem}
+      .hero-inner{gap:1.8rem}
+      .trust{flex-direction:column;align-items:flex-start}
+      .products-shell{grid-template-columns:minmax(0,1fr)}
+      .filter-card{order:-1}
+      .builder-shell{padding:1.1rem}
+      .collections-grid,.stories-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+      .footer-inner{grid-template-columns:minmax(0,1fr)}
+    }
+    @media (max-width:560px){
+      :root{--nav-height:64px;--max-width:100%}
+      .container{padding-inline:1rem}
+      .hero-card{padding:1.2rem}
+      .hero-sofa-img img{height:190px}
+      .product-media{height:140px}
+      .collections-grid,.stories-grid{
+        grid-template-columns:minmax(0,1fr);
+      }
+      .visit-shell{gap:1rem}
+      .floating{right:.75rem;bottom:.75rem}
+      .floating-btn span.label{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="top-bar">
+      <div class="top-bar-inner">
+        <div class="top-bar-left">
+          <span>Guntur · Showroom: 10 AM – 10 PM</span>
+          <span class="pill">Made in India</span>
+        </div>
+        <div class="top-bar-right">
+          <span>WhatsApp: +91-9885916770</span>
+          <a href="#visit" style="text-decoration: underline;">Visit our Store</a>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="logo-group">
+            <div class="logo-mark">SS</div>
+            <div class="logo-text">
+              <span>Sagar Sofas</span>
+              <span>Luxury · Custom · Indian homes</span>
+            </div>
+          </div>
+          <div class="nav-links" id="nav-links">
+            <a class="nav-link active" data-target="home">Home</a>
+            <a class="nav-link" data-target="collections">Collections</a>
+            <a class="nav-link" data-target="listing">All Sofas</a>
+            <a class="nav-link" data-target="builder">Custom Sofas</a>
+            <a class="nav-link" data-target="stories">Stories</a>
+          </div>
+          <div class="nav-cta">
+            <button class="btn btn-outline" id="nav-whatsapp">WhatsApp</button>
+            <button class="btn btn-primary" id="nav-call">Call Store</button>
+          </div>
+          <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+
+      <div class="nav-mobile" id="nav-mobile">
+        <a class="active" data-target="home">Home</a>
+        <a data-target="collections">Collections</a>
+        <a data-target="listing">All Sofas</a>
+        <a data-target="builder">Custom Sofas</a>
+        <a data-target="stories">Stories</a>
+        <div class="nav-mobile-cta">
+          <button class="btn btn-outline" style="width:100%;" id="nav-mobile-whatsapp">WhatsApp</button>
+          <button class="btn btn-primary" style="width:100%;" id="nav-mobile-call">Call</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="container hero">
+          <div class="hero-inner">
+            <div class="hero-copy reveal">
+              <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                <span>Premium sofas for Indian homes</span>
+              </div>
+              <h1>Modern luxury sofas, custom sized for your living room.</h1>
+              <p>Discover fabric, leather, recliners and sofa-beds crafted with kiln-dried wood, premium foams and stain-resistant fabrics designed for Indian families in Guntur.</p>
+              <div class="hero-actions">
+                <button class="btn btn-primary" id="hero-explore">Explore collections</button>
+                <button class="btn btn-outline" id="hero-builder">Design your custom sofa</button>
+              </div>
+              <div class="hero-meta">
+                <div class="hero-meta-item">
+                  <span>10-Year frame warranty</span><br>
+                  <span>On all kiln-dried hardwood frames</span>
+                </div>
+                <div class="hero-meta-item">
+                  <span>Delivery in Guntur</span><br>
+                  <span>White-glove installation available</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-visual reveal">
+              <div class="hero-card">
+                <div class="hero-sofa">
+                  <div class="hero-sofa-top">
+                    <div>
+                      <div class="hero-sofa-label">Azure Recliner Sectional</div>
+                      <div style="font-size:0.74rem;opacity:0.8;">Perfect for binge nights and Sunday siestas.</div>
+                    </div>
+                    <div class="hero-sofa-tag">New · Recliner</div>
+                  </div>
+                  <div class="hero-sofa-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1200&q=70"
+                      alt="Modern recliner sectional sofa"
+                      loading="eager"
+                      decoding="async"
+                      width="1200" height="800"
+                      onerror="imgFallback(this)">
+                    <div class="hero-sofa-line"></div>
+                  </div>
+                  <div class="hero-sofa-meta">
+                    <span><strong>From ₹54,999</strong> · 3+ seater with chaise</span>
+                    <span>EMI from ₹2,599/mo</span>
+                  </div>
+                </div>
+                <div class="hero-floating-card">
+                  <span>Average delivery</span>
+                  <span>10–15 days in Guntur</span>
+                </div>
+                <div class="hero-stats">
+                  <div class="hero-stat">
+                    <strong>4.8 / 5</strong>
+                    <span>Customer rating</span>
+                  </div>
+                  <div class="hero-stat">
+                    <strong>1,000+</strong>
+                    <span>Guntur homes furnished</span>
+                  </div>
+                  <div class="hero-stat">
+                    <strong>30+</strong>
+                    <span>Fabric & leather options</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trust reveal">
+            <div style="font-size:0.85rem;">Why Sagar Sofas Guntur</div>
+            <div class="trust-group">
+              <div class="trust-item">
+                <span class="trust-dot"></span>
+                <span>10-Year frame warranty</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-dot"></span>
+                <span>Premium foam & stain-guard fabrics</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-dot"></span>
+                <span>Local delivery & installation in Guntur</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-dot"></span>
+                <span>Proudly crafted in India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Collections -->
+      <section id="collections" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <h2>Explore collections</h2>
+              <p>Browse our top picks for Indian homes in Guntur – from family-friendly fabric sofas to premium leather recliners.</p>
+            </div>
+          </div>
+          <div class="collections-grid" id="collections-grid"></div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section id="listing" class="products-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <h2>All sofas</h2>
+              <p>Filter by type, material, budget and seating. Add sofas to your shortlist, then send everything to WhatsApp in one go.</p>
+            </div>
+          </div>
+          <div class="products-shell">
+            <aside class="filter-card reveal">
+              <div class="filter-header">
+                <h3>Filter sofas</h3>
+                <button type="button" class="btn btn-secondary btn-small" id="clear-filters">Clear</button>
+              </div>
+              <div class="filter-group">
+                <label class="filter-label" for="search">Search</label>
+                <input id="search" class="input" type="search" placeholder="Search by name or style">
+              </div>
+              <div class="filter-group">
+                <label class="filter-label" for="categoryFilter">Category</label>
+                <select id="categoryFilter" class="select">
+                  <option value="all">All</option>
+                  <option value="Sofa">Sofa</option>
+                  <option value="Recliner">Recliner</option>
+                  <option value="Sofa cum bed">Sofa cum bed</option>
+                  <option value="Chair">Chair</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label class="filter-label" for="materialFilter">Material</label>
+                <select id="materialFilter" class="select">
+                  <option value="all">All</option>
+                  <option value="Fabric">Fabric</option>
+                  <option value="Leatherette">Leatherette</option>
+                  <option value="Leather">Leather</option>
+                  <option value="Wood + Fabric">Wood + Fabric</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label class="filter-label" for="priceFilter">Price range</label>
+                <select id="priceFilter" class="select">
+                  <option value="all">Any budget</option>
+                  <option value="0-25000">Under ₹25,000</option>
+                  <option value="25001-45000">₹25,001 – ₹45,000</option>
+                  <option value="45001-80000">₹45,001 – ₹80,000</option>
+                  <option value="80001-200000">Above ₹80,000</option>
+                </select>
+              </div>
+            </aside>
+            <div class="products-list" id="products-list" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Builder -->
+      <section id="builder" class="builder-section">
+        <div class="container">
+          <div class="builder-shell reveal">
+            <div class="builder-text">
+              <h2>Design your custom sofa.</h2>
+              <p>Share your size, layout, fabric choice and budget. We’ll help you build a custom sofa that fits your living room and daily life.</p>
+              <div class="badge-row">
+                <span class="badge">L-Shape & U-Shape</span>
+                <span class="badge">Fixed & recliners</span>
+                <span class="badge">Fabric & leather</span>
+              </div>
+              <div>
+                <strong style="font-size:.86rem;">Popular sofa colors</strong>
+                <div class="swatch-grid" id="swatch-grid"></div>
+              </div>
+            </div>
+            <div class="builder-form">
+              <form id="builder-form">
+                <div style="margin-bottom:.7rem;">
+                  <label for="builder-size">Room size / sofa size</label>
+                  <input id="builder-size" class="input" placeholder="Example: 12x18 ft living room, 8 ft sofa">
+                </div>
+                <div style="margin-bottom:.7rem;">
+                  <label for="builder-style">Style</label>
+                  <select id="builder-style" class="select">
+                    <option>Sectional L-Shape</option>
+                    <option>Three seater with chairs</option>
+                    <option>Recliner set</option>
+                    <option>Sofa cum bed</option>
+                    <option>Other / not sure</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="builder-notes">Notes</label>
+                  <textarea id="builder-notes" class="textarea" placeholder="Tell us about your family, pets, usage, preferred firmness, and any reference photo."></textarea>
+                </div>
+                <div class="builder-actions">
+                  <button type="button" class="btn btn-primary" id="builder-whatsapp">Share on WhatsApp</button>
+                  <button type="button" class="btn btn-outline" id="builder-clear">Clear</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stories -->
+      <section id="stories" class="stories-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <h2>Homes we’ve furnished</h2>
+              <p>Real stories from Guntur families who upgraded their living rooms with Sagar Sofas.</p>
+            </div>
+          </div>
+          <div class="stories-grid" id="stories-grid"></div>
+        </div>
+      </section>
+
+      <!-- Visit -->
+      <section id="visit" class="visit-section">
+        <div class="container">
+          <div class="visit-shell reveal">
+            <div class="visit-text">
+              <h2>Visit our Sagar Sofas showroom.</h2>
+              <p>See fabrics, sit on display pieces and discuss your custom sofa with our team at the showroom in Guntur.</p>
+              <div class="visit-details">
+                <strong>Address:</strong>
+                6/14 Street, Opp. Bank Officers Club,<br>
+                Pandaripuram, Brodipet, Guntur,<br>
+                Andhra Pradesh 522004<br>
+                <a class="map-inline"
+                   href="https://maps.app.goo.gl/pcziiTnb49kmvXst7"
+                   target="_blank" rel="noopener"
+                   aria-label="Open Sagar Sofas location in Google Maps">
+                  Get directions →
+                </a><br>
+                <strong>Timings:</strong> 10:00 AM – 9:00 PM (All days)
+              </div>
+              <div class="visit-actions">
+                <a class="btn btn-primary"
+                   id="visit-map"
+                   href="https://maps.app.goo.gl/pcziiTnb49kmvXst7"
+                   target="_blank" rel="noopener"
+                   aria-label="Open Sagar Sofas location on Google Maps">Google Maps</a>
+                <button class="btn btn-outline" id="visit-call">Call now</button>
+              </div>
+            </div>
+            <div class="visit-map">
+              <img
+                src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1400&q=70"
+                alt="Sagar Sofas showroom interior in Guntur"
+                loading="lazy"
+                decoding="async"
+                width="1400" height="900"
+                onerror="imgFallback(this)">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner reveal">
+        <div class="footer-brand">
+          <div class="footer-brand-title">Sagar Sofas · Guntur</div>
+          <div>Premium sofas, recliners and custom designs for Indian homes with local support in Guntur.</div>
+          <div>© <span id="year"></span> Sagar Sofas. All rights reserved.</div>
+          <!-- Made-by credit linking to the developer's portfolio. -->
+          <a class="footer-credit"
+             href="https://jammi-sangeetharao.netlify.app"
+             target="_blank"
+             rel="noopener"
+             aria-label="Made by Developer — visit Jammi Sangeeharao's portfolio">
+            <span class="credit-dot" aria-hidden="true"></span>
+            <span class="credit-by">Made by</span>
+            <span class="credit-name">Developer</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <strong style="font-size:.84rem;color:var(--primary);">Browse</strong>
+          <a href="#collections">Collections</a>
+          <a href="#listing">All sofas</a>
+          <a href="#builder">Custom sofas</a>
+        </div>
+        <div class="footer-links">
+          <strong style="font-size:.84rem;color:var(--primary);">Contact</strong>
+          <a href="#visit">Visit showroom</a>
+          <a href="tel:+919885916770">Call: +91-98859 16770</a>
+          <a href="#" id="footer-whatsapp">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="floating">
+      <button class="floating-btn" id="floating-whatsapp">
+        <span class="icon">💬</span>
+        <span class="label">Chat on WhatsApp</span>
+      </button>
+    </div>
+
+    <div class="toast" id="toast"></div>
+  </div>
+
+  <script>
+    const WHATSAPP_NUMBER = "919885916770";
+
+    /* --------------------------------------------------------------
+       IMAGE SOURCES
+       - All photos are royalty-free from Unsplash (hot-linking allowed).
+       - `FALLBACK_SVG` is an inline data URI used if a network image
+         fails to load (airplane mode, CDN down, etc.).
+       - `imgFallback()` is set as `onerror` on every <img> below.
+    -------------------------------------------------------------- */
+    const FALLBACK_SVG =
+      "data:image/svg+xml;utf8," +
+      encodeURIComponent(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">' +
+          '<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1">' +
+            '<stop offset="0" stop-color="#f1e7dc"/><stop offset="1" stop-color="#d9c7b5"/>' +
+          '</linearGradient></defs>' +
+          '<rect width="600" height="400" fill="url(#g)"/>' +
+          '<g fill="#a07a55" opacity=".85">' +
+            '<rect x="120" y="200" width="360" height="110" rx="18"/>' +
+            '<rect x="100" y="220" width="60" height="90" rx="14"/>' +
+            '<rect x="440" y="220" width="60" height="90" rx="14"/>' +
+            '<rect x="150" y="170" width="100" height="50" rx="10"/>' +
+            '<rect x="260" y="170" width="100" height="50" rx="10"/>' +
+            '<rect x="370" y="170" width="100" height="50" rx="10"/>' +
+          '</g>' +
+          '<text x="300" y="360" text-anchor="middle" font-family="Inter,Arial,sans-serif" ' +
+            'font-size="22" fill="#5c4632" font-weight="600">Sagar Sofas</text>' +
+        '</svg>'
+      );
+
+    function imgFallback(img){
+      if(img.dataset.fallbackApplied) return;       // prevent loops
+      img.dataset.fallbackApplied = "1";
+      img.src = FALLBACK_SVG;
+    }
+    // expose for inline onerror handlers in the static markup
+    window.imgFallback = imgFallback;
+
+    // Royalty-free sofa/showroom photos from Unsplash.
+    const IMG = {
+      fabric3:   "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=70",
+      sectional: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=70",
+      recliner:  "https://images.unsplash.com/photo-1582582494705-f8ce0b0c24f0?auto=format&fit=crop&w=1200&q=70",
+      sofaBed:   "https://images.unsplash.com/photo-1550254478-ead40cc54513?auto=format&fit=crop&w=1200&q=70",
+      accent:    "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1200&q=70",
+      chester:   "https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1200&q=70",
+      family:    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=70",
+      reclinerC: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=70",
+      custom:    "https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=1200&q=70",
+      story1:    "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=70",
+      story2:    "https://images.unsplash.com/photo-1616137466211-f939a420be84?auto=format&fit=crop&w=1000&q=70",
+      story3:    "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1000&q=70"
+    };
+
+    const PRODUCTS = [
+      {
+        id:1,
+        name:"Luna 3-Seater Sofa",
+        category:"Sofa",
+        material:"Fabric",
+        seats:"3 Seater",
+        price:28999,
+        emi:2599,
+        image:IMG.fabric3
+      },
+      {
+        id:2,
+        name:"Aster L-Shaped Sectional",
+        category:"Sofa",
+        material:"Fabric",
+        seats:"5 Seater",
+        price:52999,
+        emi:3899,
+        image:IMG.sectional
+      },
+      {
+        id:3,
+        name:"Verve Recliner Duo",
+        category:"Recliner",
+        material:"Leatherette",
+        seats:"2 Seater",
+        price:45999,
+        emi:3499,
+        image:IMG.recliner
+      },
+      {
+        id:4,
+        name:"Halo Sofa Cum Bed",
+        category:"Sofa cum bed",
+        material:"Fabric",
+        seats:"3 Seater",
+        price:31999,
+        emi:2599,
+        image:IMG.sofaBed
+      },
+      {
+        id:5,
+        name:"Mira Accent Chair",
+        category:"Chair",
+        material:"Velvet",
+        seats:"1 Seater",
+        price:14999,
+        emi:1499,
+        image:IMG.accent
+      },
+      {
+        id:6,
+        name:"Urban Chesterfield",
+        category:"Sofa",
+        material:"Leatherette",
+        seats:"3 Seater",
+        price:64999,
+        emi:4899,
+        image:IMG.chester
+      }
+    ];
+
+    const COLLECTIONS = [
+      {
+        label:"Family sofas",
+        tag:"Best for everyday use",
+        title:"Fabric sofas for Indian families",
+        text:"Comfortable, easy-clean fabric sofas for living rooms where children and guests are always around.",
+        price:"From ₹28,999",
+        image:IMG.family
+      },
+      {
+        label:"Recliner range",
+        tag:"Movie & match days",
+        title:"Recliners for binge nights",
+        text:"Single and 2+1+1 recliner sets designed for your TV room or hall in Guntur.",
+        price:"From ₹22,999",
+        image:IMG.reclinerC
+      },
+      {
+        label:"Custom size",
+        tag:"Made to measure",
+        title:"Custom L & U shape sofas",
+        text:"We size the sofa to your room and wall so you don’t waste space or block walkways.",
+        price:"Custom pricing",
+        image:IMG.custom
+      }
+    ];
+
+    const STORIES = [
+      {
+        title:"2BHK flat in Brodipet",
+        text:"Compact L-shaped sofa with storage chaise and pet-friendly fabric.",
+        location:"Brodipet, Guntur",
+        type:"Family of 4",
+        image:IMG.story1
+      },
+      {
+        title:"Independent house in Pattabhipuram",
+        text:"Leatherette recliner set for TV room with cupholders and chargers.",
+        location:"Pattabhipuram, Guntur",
+        type:"Movie lovers",
+        image:IMG.story2
+      },
+      {
+        title:"Rental apartment near Ring Road",
+        text:"Budget-friendly 3-seater with chairs and removable covers.",
+        location:"Ring Road, Guntur",
+        type:"Young couple",
+        image:IMG.story3
+      }
+    ];
+
+    const SWATCHES = [
+      {name:"Classic Brown",value:"#c48a5a"},
+      {name:"Grey",value:"#b0b4ba"},
+      {name:"Beige",value:"#d5c3aa"},
+      {name:"Dark Blue",value:"#6b7c9f"},
+      {name:"Olive Green",value:"#8b9c6a"},
+      {name:"Wine",value:"#a15b6a"}
+    ];
+
+    const state = {
+      search:"",
+      category:"all",
+      material:"all",
+      price:"all",
+      color:"#c48a5a",
+      shortlist:[]
+    };
+
+    const toast = document.getElementById("toast");
+
+    function showToast(msg){
+      toast.textContent = msg;
+      toast.classList.add("show");
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(()=>toast.classList.remove("show"),1800);
+    }
+
+    function formatINR(value){
+      return new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(value);
+    }
+
+    function filteredProducts(){
+      return PRODUCTS.filter(p=>{
+        const q = (p.name+" "+p.category+" "+p.material).toLowerCase();
+        const searchOk = q.includes(state.search.toLowerCase());
+        const catOk = state.category==="all" || p.category===state.category;
+        const matOk = state.material==="all" || p.material===state.material;
+        const priceOk = state.price==="all" || (()=>{
+          const [min,max] = state.price.split("-").map(Number);
+          return p.price>=min && p.price<=max;
+        })();
+        return searchOk && catOk && matOk && priceOk;
+      });
+    }
+
+    function observeReveals(){
+      const items = document.querySelectorAll(".reveal:not(.show)");
+      const observer = new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      },{threshold:0.12});
+      items.forEach(el=>observer.observe(el));
+    }
+
+    function renderCollections(){
+      const grid = document.getElementById("collections-grid");
+      grid.innerHTML = COLLECTIONS.map(c=>`
+        <article class="collection-card reveal">
+          <div class="collection-media">
+            <img src="${c.image}" alt="${c.title}"
+                 loading="lazy" decoding="async"
+                 width="600" height="400"
+                 onerror="imgFallback(this)">
+          </div>
+          <div class="collection-body">
+            <div class="collection-label">
+              <span class="collection-label-dot"></span>
+              <span>${c.label}</span>
+            </div>
+            <h3>${c.title}</h3>
+            <p>${c.text}</p>
+            <div class="collection-meta">
+              <span>${c.tag}</span>
+              <strong>${c.price}</strong>
+            </div>
+          </div>
+        </article>
+      `).join("");
+      observeReveals();
+    }
+
+    function renderProducts(){
+      const list = filteredProducts();
+      const container = document.getElementById("products-list");
+      if(!list.length){
+        container.innerHTML = `<div class="empty reveal">No products found with these filters.</div>`;
+        observeReveals();
+        return;
+      }
+      container.innerHTML = list.map(p=>{
+        const selected = state.shortlist.some(x=>x.id===p.id);
+        return `
+          <article class="product-card reveal">
+            <div class="product-media">
+              <img src="${p.image}" alt="${p.name}"
+                   loading="lazy" decoding="async"
+                   width="600" height="400"
+                   onerror="imgFallback(this)">
+            </div>
+            <div class="product-chip-row">
+              <span class="product-chip">${p.category}</span>
+              <span class="product-chip">${p.material}</span>
+              <span class="product-chip">${p.seats}</span>
+            </div>
+            <div class="product-name">${p.name}</div>
+            <div class="product-meta">
+              <span class="product-price">${formatINR(p.price)}</span>
+              <span>EMI from ${formatINR(p.emi)}</span>
+            </div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-primary btn-small" data-add="${p.id}">
+                ${selected ? "Added" : "Add to list"}
+              </button>
+              <button type="button" class="btn btn-secondary btn-small" data-whatsapp="${p.id}">
+                WhatsApp
+              </button>
+            </div>
+          </article>
+        `;
+      }).join("");
+      observeReveals();
+    }
+
+    function renderStories(){
+      const grid = document.getElementById("stories-grid");
+      grid.innerHTML = STORIES.map(s=>`
+        <article class="story-card reveal">
+          <div class="story-img">
+            <img src="${s.image}" alt="${s.title}"
+                 loading="lazy" decoding="async"
+                 width="600" height="400"
+                 onerror="imgFallback(this)">
+          </div>
+          <div class="story-title">${s.title}</div>
+          <div class="story-body">${s.text}</div>
+          <div class="story-meta">${s.location} · ${s.type}</div>
+        </article>
+      `).join("");
+      observeReveals();
+    }
+
+    function renderSwatches(){
+      const grid = document.getElementById("swatch-grid");
+      grid.innerHTML = SWATCHES.map(sw=>`
+        <button type="button" class="swatch ${state.color===sw.value?"active":""}" data-color="${sw.value}">
+          <div class="swatch-color" style="background:${sw.value};"></div>
+          <span>${sw.name}</span>
+        </button>
+      `).join("");
+    }
+
+    function addToShortlist(id){
+      const item = PRODUCTS.find(p=>p.id===id);
+      if(!item) return;
+      if(state.shortlist.some(p=>p.id===id)) return;
+      state.shortlist.push(item);
+      renderProducts();
+      showToast("Item added to list");
+    }
+
+    function openProductWhatsApp(id){
+      const item = PRODUCTS.find(p=>p.id===id);
+      if(!item) return;
+      const msg = [
+        "*Sagar Sofas Product Enquiry*",
+        "",
+        `Product: ${item.name}`,
+        `Category: ${item.category}`,
+        `Material: ${item.material}`,
+        `Seats: ${item.seats}`,
+        `Price: ${formatINR(item.price)}`,
+        "",
+        "I saw this on the website and would like to know more."
+      ].join("%0A");
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`,"_blank","noopener");
+    }
+
+    function openGeneralWhatsApp(message){
+      const msg = message || "*Hi Sagar Sofas,* I would like to know more about your sofas.";
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,"_blank","noopener");
+    }
+
+    // Filter events
+    document.getElementById("search").addEventListener("input",e=>{
+      state.search = e.target.value;
+      renderProducts();
+    });
+    document.getElementById("categoryFilter").addEventListener("change",e=>{
+      state.category = e.target.value;
+      renderProducts();
+    });
+    document.getElementById("materialFilter").addEventListener("change",e=>{
+      state.material = e.target.value;
+      renderProducts();
+    });
+    document.getElementById("priceFilter").addEventListener("change",e=>{
+      state.price = e.target.value;
+      renderProducts();
+    });
+    document.getElementById("clear-filters").addEventListener("click",()=>{
+      state.search="";state.category="all";state.material="all";state.price="all";
+      document.getElementById("search").value="";
+      document.getElementById("categoryFilter").value="all";
+      document.getElementById("materialFilter").value="all";
+      document.getElementById("priceFilter").value="all";
+      renderProducts();
+      showToast("Filters cleared");
+    });
+
+    document.getElementById("products-list").addEventListener("click",e=>{
+      const addBtn = e.target.closest("[data-add]");
+      const waBtn = e.target.closest("[data-whatsapp]");
+      if(addBtn) addToShortlist(Number(addBtn.dataset.add));
+      if(waBtn) openProductWhatsApp(Number(waBtn.dataset.whatsapp));
+    });
+
+    document.getElementById("swatch-grid").addEventListener("click",e=>{
+      const btn = e.target.closest("[data-color]");
+      if(!btn) return;
+      state.color = btn.dataset.color;
+      renderSwatches();
+      showToast("Color selected");
+    });
+
+    document.getElementById("builder-whatsapp").addEventListener("click",()=>{
+      const size = document.getElementById("builder-size").value.trim() || "Not specified";
+      const style = document.getElementById("builder-style").value;
+      const notes = document.getElementById("builder-notes").value.trim() || "No extra notes";
+      const colorName = SWATCHES.find(s=>s.value===state.color)?.name || "Not specified";
+      const msg = [
+        "*Custom Sofa Enquiry*",
+        "",
+        `Room/Sofa size: ${size}`,
+        `Style: ${style}`,
+        `Preferred color: ${colorName}`,
+        "",
+        `Notes: ${notes}`
+      ].join("%0A");
+      openGeneralWhatsApp(msg);
+    });
+
+    document.getElementById("builder-clear").addEventListener("click",()=>{
+      document.getElementById("builder-size").value="";
+      document.getElementById("builder-style").selectedIndex=0;
+      document.getElementById("builder-notes").value="";
+      showToast("Custom form cleared");
+    });
+
+    function scrollToSection(id){
+      const el=document.getElementById(id);
+      if(!el) return;
+      window.scrollTo({top:el.offsetTop-74,behavior:"smooth"});
+    }
+    document.getElementById("hero-explore").addEventListener("click",()=>scrollToSection("collections"));
+    document.getElementById("hero-builder").addEventListener("click",()=>scrollToSection("builder"));
+    document.querySelectorAll(".nav-link").forEach(link=>{
+      link.addEventListener("click",()=>{
+        const target=link.dataset.target;
+        scrollToSection(target);
+      });
+    });
+
+    document.getElementById("nav-whatsapp").addEventListener("click",()=>openGeneralWhatsApp());
+    document.getElementById("nav-mobile-whatsapp").addEventListener("click",()=>openGeneralWhatsApp());
+    document.getElementById("nav-call").addEventListener("click",()=>window.location.href="tel:+919885916770");
+    document.getElementById("nav-mobile-call").addEventListener("click",()=>window.location.href="tel:+919885916770");
+    document.getElementById("floating-whatsapp").addEventListener("click",()=>openGeneralWhatsApp());
+    document.getElementById("footer-whatsapp").addEventListener("click",e=>{
+      e.preventDefault();openGeneralWhatsApp();
+    });
+    document.getElementById("visit-call").addEventListener("click",()=>window.location.href="tel:+919885916770");
+
+    const navToggle=document.getElementById("nav-toggle");
+    const navMobile=document.getElementById("nav-mobile");
+    navToggle.addEventListener("click",()=>navMobile.classList.toggle("show"));
+    navMobile.addEventListener("click",e=>{
+      const link=e.target.closest("a[data-target]");
+      if(!link) return;
+      scrollToSection(link.dataset.target);
+      navMobile.classList.remove("show");
+    });
+
+    document.getElementById("year").textContent=new Date().getFullYear();
+
+    renderCollections();
+    renderProducts();
+    renderStories();
+    renderSwatches();
+    observeReveals();
+  </script>
+</body>
+</html>
